@@ -1,1 +1,17 @@
 /* Pallette: 03071e, 370617, 6a040f, 9d0208, d00000, dc2f02, e85d04, f48c06, faa307, ffba08 */
+
+:root {
+  --dark-bg: #03071e;
+  
+  --ultra-dark-red: #370617;
+  --dark-red: #6a040f;
+  --semi-dark-red: #9d0208;
+  --red: #d00000;
+  
+  --semi-dark-orange: #dc2f02;
+  --orange: #e85d04;
+  --light-orange: #f48c06;
+  
+  --light-yellow: #faa307;
+  --yellow: #ffba08;
+}
