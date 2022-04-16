@@ -15,3 +15,38 @@
   --light-yellow: #faa307;
   --yellow: #ffba08;
 }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--light-orange);
+  radius: 10px;
+}
+
+li {
+  float: left;
+  transition-duration: 0.3s;
+  radius: 10px; /*why does this not work?*/
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition-duration: 0.3s;
+  radius: 10px;
+}
+
+li a:hover:not(.active) {
+  background-color: var(--orange);
+  transition-duration: 0.3s;
+  radius: 10px; /*This also doesn't work*/
+}
