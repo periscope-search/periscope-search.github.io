@@ -22,13 +22,13 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: var(--light-orange);
-  radius: 10px;
+  border-radius: 10px;
 }
 
 li {
   float: left;
   transition-duration: 0.3s;
-  radius: 10px; /*why does this not work?*/
+  border-radius: 10px;
 }
 
 li:last-child {
@@ -42,11 +42,11 @@ li a {
   padding: 14px 16px;
   text-decoration: none;
   transition-duration: 0.3s;
-  radius: 10px;
+  border-radius: 10px;
 }
 
 li a:hover:not(.active) {
   background-color: var(--orange);
   transition-duration: 0.3s;
-  radius: 10px; /*This also doesn't work*/
+  border-radius: 10px;
 }
