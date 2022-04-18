@@ -16,6 +16,10 @@
   --yellow: #ffba08;
 }
 
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
