@@ -17,7 +17,22 @@
   --yellow: #ffba08;
 }
 
-/* Basics */
+input[type=text] {
+  width: 130px;
+  border: 2px solid black;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: var(--light-yellow);
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  transition: width 0.7s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 90%;
+}
+
 body {
   font-family: 'Source Sans Pro', sans-serif;
 }
