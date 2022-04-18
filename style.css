@@ -19,27 +19,29 @@
 body {
   font-family: 'Source Sans Pro', sans-serif;
 }
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+nav {
   overflow: hidden;
   background-color: var(--light-orange);
   border-radius: 10px;
 }
 
-li {
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav li, span {
   float: left;
   transition-duration: 0.3s;
   border-radius: 10px;
 }
 
-li:last-child {
+nav li:last-child {
   border-right: none;
 }
 
-li a {
+nav li a, span {
   display: block;
   color: black;
   text-align: center;
@@ -49,8 +51,12 @@ li a {
   border-radius: 10px;
 }
 
-li a:hover:not(.active) {
+nav li a:hover:not(.active) {
   background-color: var(--orange);
   transition-duration: 0.3s;
   border-radius: 10px;
+}
+
+.nav-name {
+  font-weight: 600;
 }
