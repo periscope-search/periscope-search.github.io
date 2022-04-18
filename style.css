@@ -1,5 +1,6 @@
 /* Pallette: 03071e, 370617, 6a040f, 9d0208, d00000, dc2f02, e85d04, f48c06, faa307, ffba08 */
 
+/* Colours */
 :root {
   --dark-bg: #03071e;
   
@@ -24,7 +25,7 @@ input[type=text] {
   background-color: var(--light-yellow);
   background-position: 10px 10px; 
   background-repeat: no-repeat;
-  padding: 12px 20px 12px 40px;
+  padding: 12px 20px 12px 20px;
   transition: width 0.7s ease-in-out;
 }
 
@@ -36,26 +37,30 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+/* Navigation */
+nav {
   overflow: hidden;
   background-color: var(--light-orange);
   border-radius: 10px;
 }
 
-li {
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav li, span {
   float: left;
   transition-duration: 0.3s;
   border-radius: 10px;
 }
 
-li:last-child {
+nav li:last-child {
   border-right: none;
 }
 
-li a {
+nav li a, span {
   display: block;
   color: black;
   text-align: center;
@@ -65,8 +70,12 @@ li a {
   border-radius: 10px;
 }
 
-li a:hover:not(.active) {
+nav li a:hover:not(.active) {
   background-color: var(--orange);
   transition-duration: 0.3s;
   border-radius: 10px;
+}
+
+.nav-name {
+  font-weight: 600;
 }
