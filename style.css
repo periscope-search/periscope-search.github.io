@@ -79,3 +79,21 @@ nav li a:hover:not(.active) {
 .nav-name {
   font-weight: 600;
 }
+
+a:link {
+  color: black;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: var(--orange);
+  transition-duration: 0.2s;
+}
+
+a:active {
+  color: var(--semi-dark-orange);
+}
