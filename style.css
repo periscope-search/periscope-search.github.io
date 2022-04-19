@@ -82,6 +82,7 @@ nav li a:hover:not(.active) {
 
 a:link {
   color: black;
+  transition-duration: 0.2s;
 }
 
 /* visited link */
