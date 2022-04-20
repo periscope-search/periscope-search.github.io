@@ -18,8 +18,15 @@
   </nav>
   <h1>Welcome to Periscope Search!</h1>
   <p>Start by searching a Scratch user.</p>
-  <form>
-    <input type="text" name="search" placeholder="Search user...">
+  <form id="search-form">
+    <input type="text" name="search" id="user" placeholder="Search user...">
   </form>
+
+  <script>
+    document.getElementById("search-form").addEventListener("submit", (e) => {
+      e.preventDefault();
+      window.location.href = "user.html?user=" + document.getElementById("user").value;
+    })
+  </script>
   </body>
 </html>
