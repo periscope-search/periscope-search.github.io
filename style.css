@@ -98,3 +98,67 @@ a:hover {
 a:active {
   color: var(--semi-dark-orange);
 }
+
+.loading {
+  text-align: center;
+}
+
+.info {
+  text-align: center;
+}
+
+.info-panel {
+  background-color: var(--light-orange);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px;
+  margin-bottom: 10px;
+}
+
+.split-panel {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+img#pfp {
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+#user-id {
+  color: #939090;
+}
+
+.dir-col {
+  flex-direction: column;
+}
+
+.dir-row {
+  flex-direction: row;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5px;
+  flex-grow: 1;
+}
+
+.flex-container * {
+  margin: 5px;
+}
+
+.split-panel-box {
+  background-color: var(--light-orange);
+  padding: 10px;
+  border-radius: 10px;
+}
