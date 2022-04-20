@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Periscope Search | Credits</title>
+    <script src="search.js" defer></script>
   </head>
   <body>
    <nav>
@@ -17,18 +18,18 @@
     </ul>
   </nav>
 
-  <div class="loading">
+  <div id="loading">
     <h1>Loading...</h1>
   </div>
 
-  <div class="info">
+  <div id="info" style="display: none;">
     <div class="info-panel dir-col">
-      <img src="#" width="60" id="pfp" height="60" alt="">
+      <img src="#" width="75" id="pfp" height="75" alt="">
       <b id="username">???</b>
       <i id="user-id">#00000</i>
     </div>
 
-    <div class="info-panel list-panel dir-row">
+    <div class="info-panel dir-row">
       <div class="flex-container">
         <h1>Country</h1>
         <h3 id="country">Antarctica</h3>
@@ -43,15 +44,13 @@
       </div>
     </div>
 
-    <div class="split-panel list-panel dir-row">
-      <div class="flex-container split-panel-box panel-bg">
-        <h2>About Me</h2>
-        <p id="about-me">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, commodi.</p>
-      </div>
-      <div class="flex-container split-panel-box panel-bg">
-        <h2>What I'm Working On</h2>
-        <p id="wiwo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, commodi.</p>
-      </div>
+    <div class="info-panel flex-container dir-col">
+      <h2>About Me</h2>
+      <p id="about-me">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, commodi.</p>
+    </div>
+    <div class="info-panel flex-container dir-col">
+      <h2>What I'm Working On</h2>
+      <p id="wiwo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, commodi.</p>
     </div>
   </div>
   </body>

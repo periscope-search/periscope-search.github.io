@@ -99,11 +99,11 @@ a:active {
   color: var(--semi-dark-orange);
 }
 
-.loading {
+#loading {
   text-align: center;
 }
 
-.info {
+#info {
   text-align: center;
 }
 
@@ -117,15 +117,9 @@ a:active {
   padding: 10px;
   margin: 5px;
   margin-bottom: 10px;
-}
-
-.split-panel {
-  text-align: center;
   display: flex;
   justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  margin-bottom: 10px;
+  flex-grow: 1;
 }
 
 img#pfp {
@@ -134,7 +128,7 @@ img#pfp {
 }
 
 #user-id {
-  color: #939090;
+  color: #4d4d4d;
 }
 
 .dir-col {
@@ -150,15 +144,10 @@ img#pfp {
   flex-direction: column;
   justify-content: center;
   margin: 5px;
+  margin-bottom: 10px;
   flex-grow: 1;
 }
 
 .flex-container * {
   margin: 5px;
-}
-
-.split-panel-box {
-  background-color: var(--light-orange);
-  padding: 10px;
-  border-radius: 10px;
 }
