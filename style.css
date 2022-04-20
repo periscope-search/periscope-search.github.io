@@ -99,11 +99,7 @@ a:active {
   color: var(--semi-dark-orange);
 }
 
-#loading {
-  text-align: center;
-}
-
-#info {
+#info, #loading, #error {
   text-align: center;
 }
 

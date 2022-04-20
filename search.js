@@ -2,7 +2,10 @@ const user = new URLSearchParams(location.search).get("user");
 
 fetch(`https://periscope-api.vercel.app/api/users/${user}`).then((res) => {
   if(!res.ok) {
-    // there's a problem, error handling soon
+    document.getElementById("loading").style.display = "none";
+    document.getElementById("error").style.display = "inline";
+
+    throw new Error(`Returned with ${res.status}`)
   }
   return res.json()
 }).then((data) => {
