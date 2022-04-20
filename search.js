@@ -18,8 +18,8 @@ fetch(`https://periscope-api.vercel.app/api/users/${user}`).then((res) => {
   document.getElementById("join-date").innerText = Math.floor((new Date().getTime() - new Date(data.history.joined).getTime()) / (1000 * 60 * 60 * 24)) + " days ago"
   document.getElementById("messages").innerText = data.messages;
 
-  document.getElementById("about-me").innerText = data.profile.bio;
-  document.getElementById("wiwo").innerText = data.profile.status;
+  document.getElementById("about-me").innerText = data.profile.bio || "N/A";
+  document.getElementById("wiwo").innerText = data.profile.status || "N/A";
 
   document.getElementById("info").style.display = "inline";
   document.getElementById("loading").style.display = "none";
