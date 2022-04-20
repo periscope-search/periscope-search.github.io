@@ -104,7 +104,6 @@ a:active {
 }
 
 .info-panel {
-  background-color: var(--light-orange);
   text-align: center;
   display: flex;
   justify-content: center;
@@ -117,6 +116,31 @@ a:active {
   justify-content: center;
   flex-grow: 1;
 }
+
+.orange {
+  background-color: var(--orange);
+}
+
+.yellow {
+  background-color: var(--yellow);
+}
+
+.light-orange {
+  background-color: var(--light-orange);
+}
+/*--dark-bg: #03071e;
+  
+  --dark-burgandy: #370617;
+  --light-burgandy: #6a040f;
+  --semi-dark-red: #9d0208;
+  --red: #d00000;
+  
+  --semi-dark-orange: #dc2f02;
+  --orange: #e85d04;
+  --light-orange: #f48c06;
+  
+  --light-yellow: #faa307;
+  --yellow: #ffba08;*/
 
 img#pfp {
   margin-bottom: 5px;
@@ -146,4 +170,22 @@ img#pfp {
 
 .flex-container * {
   margin: 5px;
+}
+
+.button {
+  background-color: var(--orange)
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition-duration: 0.3s;
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color: var(--light-orange);
+  transition-duration: 0.3s;
 }
