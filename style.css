@@ -41,6 +41,17 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+body.light {
+  background-color: white;
+  color: black;
+}
+
+body.dark {
+  background-color: black; /* I'm going to pick a better color*/
+  color: white;
+  
+}
+
 /* Navigation */
 nav {
   overflow: hidden;
