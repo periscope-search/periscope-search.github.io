@@ -24,3 +24,14 @@ fetch(`https://periscope-api.vercel.app/api/users/${user}`).then((res) => {
   document.getElementById("info").style.display = "inline";
   document.getElementById("loading").style.display = "none";
 })
+
+async function getOcularStatus(uname) {
+	url = `https://my-ocular.jeffalo.net/api/user/{uname}`
+	const response = const response = await fetch(url)
+	let data = await response.json();
+	const resObject = JSON.parse(data)
+    const ocular = document.getElementById('ocular-status').innerHTML
+	ocular = resObject['status']
+}
+
+getOcularStatus(user)
