@@ -12,11 +12,11 @@ function byTag(name) {
 function switchThemes() {
   // Find theme
   let theme = byTag("body").class;
-  if (theme == "light") {
-    byTag("body").class = "dark";
+  if (theme == "Light") {
+    byTag("body").class = "Dark";
     byId("theme-switch").innerText = "Light";
-  } else if (theme == "dark") {
-    byTag("body").class = "light";
+  } else if (theme == "Dark") {
+    byTag("body").class = "Light";
     byId("theme-switch").innerText = "Dark";
   }
 }
