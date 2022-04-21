@@ -155,6 +155,10 @@ img#pfp {
   color: #4d4d4d;
 }
 
+#ocular-status {
+  color: black;
+}
+
 .dir-col {
   flex-direction: column;
 }
