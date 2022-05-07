@@ -10,12 +10,13 @@ fetch(`https://periscope-api.vercel.app/api/users/${user}`).then((res) => {
   return res.json()
 }).then((data) => {
   // data received
+  let daysOld = Math.floor((new Date().getTime() - new Date(data.history.joined).getTime()) / (1000 * 60 * 60 * 24));
   document.getElementById("pfp").src = data.profile.images['90x90'];
   document.getElementById("username").innerText = data.username;
   document.getElementById("user-id").innerText = "#" + data.id;
 
   document.getElementById("country").innerText = data.profile.country;
-  document.getElementById("join-date").innerText = Math.floor((new Date().getTime() - new Date(data.history.joined).getTime()) / (1000 * 60 * 60 * 24)) + " days ago (" + data.history.joined + ")";
+  document.getElementById("join-date").innerText = daysOld + " days ago (" + data.history.joined + ")";
   document.getElementById("messages").innerText = data.messages;
 
   document.getElementById("about-me").innerText = data.profile.bio || "N/A";
