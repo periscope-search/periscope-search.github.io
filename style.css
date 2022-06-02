@@ -19,6 +19,10 @@
   
   --light-yellow: #faa307;
   --yellow: #ffba08;
+
+  --dark-theme: rgb(36, 36, 36);
+  --light-theme: rgb(246, 246, 246);
+  --theme: var(--light-theme)
 }
 
 input[type=text] {
@@ -39,17 +43,6 @@ input[type=text]:focus {
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
-}
-
-body.light {
-  background-color: white;
-  color: black;
-}
-
-body.dark {
-  background-color: black; /* I'm going to pick a better color*/
-  color: white;
-  
 }
 
 /* Navigation */
@@ -191,7 +184,7 @@ img#pfp {
   background-color: var(--orange);
   border: none;
   border-radius: 10px;
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -203,4 +196,13 @@ img#pfp {
 .button:hover {
   background-color: var(--light-orange);
   transition-duration: 0.3s;
+}
+
+.header {
+  text-align: center;
+}
+
+.buttons {
+  display: inline;
+  margin: auto;
 }
