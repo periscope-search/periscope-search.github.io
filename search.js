@@ -22,6 +22,10 @@ fetch(`https://periscope-api.vercel.app/api/users/${user}`).then((res) => {
   document.getElementById("about-me").innerText = data.profile.bio || "N/A";
   document.getElementById("wiwo").innerText = data.profile.status || "N/A";
 
+  document.getElementById("scratch-link").href = `$https://scratch.mit.edu/users/{user}`;
+  document.getElementById("scratchinfo-link").href = `$https://scratchinfo.vercel.app/users/{user}`;
+  document.getElementById("postpercent-link").href = `$https://postpercent.rirurin.com/users/{user}`
+
   document.getElementById("info").style.display = "inline";
   document.getElementById("loading").style.display = "none";
 })
